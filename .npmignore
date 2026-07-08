@@ -1,0 +1,15 @@
+# Files excluded from the published npm package.
+src/
+examples/
+bench/
+docs/
+.github/
+.vscode/
+tsconfig.json
+tsup.config.ts
+.gitignore
+.gitattributes
+.editorconfig
+*.md
+!README.md
+!LICENSE

@@ -1,0 +1,60 @@
+{
+  "name": "logease",
+  "version": "0.1.0",
+  "description": "Beautiful, zero-dependency structured logging for Node.js & TypeScript. Tiny, colorful, extensible.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "bench": "node --import tsx bench/bench.ts"
+  },
+  "keywords": [
+    "logger",
+    "logging",
+    "log",
+    "structured-logging",
+    "console",
+    "color",
+    "zero-dependency",
+    "typescript",
+    "nodejs",
+    "tiny",
+    "transport",
+    "pretty"
+  ],
+  "author": "Cryptoteep",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryptoteep/logease.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cryptoteep/logease/issues"
+  },
+  "homepage": "https://github.com/Cryptoteep/logease#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
